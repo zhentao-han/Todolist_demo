@@ -8,7 +8,7 @@ import { useHotkeys } from 'react-hotkeys-hook';
 import { Plus } from 'lucide-react';
 
 function App() {
-  const { darkMode, toggleDarkMode, selectedProjectId, projects, setFilter, setSelectedProject } = useTaskStore();
+  const { darkMode, toggleDarkMode, selectedProjectId, projects, setFilter, setSelectedProject, currentFilter } = useTaskStore();
   const [showAddTask, setShowAddTask] = useState(false);
 
   useHotkeys('q', (e) => {
