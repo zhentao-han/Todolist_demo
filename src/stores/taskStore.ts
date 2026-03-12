@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import { Task, Project, Label, Priority, FilterType } from '../types';
+import { Task, Project, Label, FilterType } from '../types';
 
 interface TaskStore {
   tasks: Task[];

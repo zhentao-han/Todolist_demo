@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Task, Priority } from '../../types';
 import { useTaskStore } from '../../stores/taskStore';
-import { Calendar, Flag, FolderOpen, Trash2, X } from 'lucide-react';
+import { Calendar, Flag, Trash2 } from 'lucide-react';
 import { DatePicker } from '../UI/DatePicker';
 
 interface TaskOptionsDropdownProps {
