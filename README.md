@@ -2,6 +2,9 @@
 
 A high-performance, minimalist to-do list application inspired by Todoist, built with React, TypeScript, and TailwindCSS.
 
+## 🚀 Live Demo
+**Access the app here: [https://zhentao-han.github.io/Todolist_demo/](https://zhentao-han.github.io/Todolist_demo/)**
+
 ## ✨ Features
 
 - **Project Management**: Create, edit, and organize tasks into custom color-coded projects.
