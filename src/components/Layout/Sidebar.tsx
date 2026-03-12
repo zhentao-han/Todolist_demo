@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTaskStore } from '../../stores/taskStore';
-import { Inbox, Calendar, CheckCircle, Plus, Edit2, Trash2 } from 'lucide-react';
+import { Calendar, CheckCircle, Plus, Edit2, Trash2 } from 'lucide-react';
 import { CreateProjectModal } from '../Project/CreateProjectModal';
 
 export const Sidebar: React.FC = () => {
@@ -9,7 +9,6 @@ export const Sidebar: React.FC = () => {
   const { projects, currentFilter, setFilter, selectedProjectId, setSelectedProject, deleteProject } = useTaskStore();
 
   const menuItems = [
-    { id: 'inbox', label: 'Inbox', icon: Inbox, filter: 'all' as const },
     { id: 'today', label: 'Today', icon: Calendar, filter: 'today' as const },
     { id: 'upcoming', label: 'Upcoming', icon: Calendar, filter: 'upcoming' as const },
     { id: 'completed', label: 'Completed', icon: CheckCircle, filter: 'completed' as const },

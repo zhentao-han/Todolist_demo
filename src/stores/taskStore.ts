@@ -38,8 +38,7 @@ export const useTaskStore = create<TaskStore>()(
     (set, get) => ({
       tasks: [],
       projects: [
-        { id: 'inbox', name: 'Inbox', color: '#3b82f6', createdAt: new Date(), updatedAt: new Date() },
-        { id: 'personal', name: 'Personal', color: '#10b981', createdAt: new Date(), updatedAt: new Date() },
+        { id: 'personal', name: 'Personal', color: '#3b82f6', createdAt: new Date(), updatedAt: new Date() },
         { id: 'work', name: 'Work', color: '#f59e0b', createdAt: new Date(), updatedAt: new Date() },
       ],
       labels: [],

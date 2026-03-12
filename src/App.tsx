@@ -43,7 +43,7 @@ function App() {
   }, [darkMode]);
 
   const selectedProject = projects.find((p: any) => p.id === selectedProjectId);
-  const title = selectedProject ? selectedProject.name : 'Inbox';
+  const title = selectedProject ? selectedProject.name : (currentFilter === 'today' ? 'Today' : currentFilter === 'upcoming' ? 'Upcoming' : currentFilter === 'completed' ? 'Completed' : 'All Tasks');
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -74,7 +74,7 @@ function App() {
                     <Plus className="w-6 h-6" />
                   </button>
                 </div>
-                {(showAddTask || title === 'Inbox') && (
+                {(showAddTask || (selectedProjectId === null && currentFilter === 'all')) && (
                   <AddTaskForm onCancel={() => setShowAddTask(false)} />
                 )}
                 <TaskList />
